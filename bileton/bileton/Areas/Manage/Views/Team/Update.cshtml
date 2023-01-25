@@ -1,0 +1,40 @@
+﻿@model Team
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h1>Update</h1>
+
+
+<form method="post" asp-action="Update" class="btn btn-success"enctype="multipart/form-data" >
+    <div class="mb-3">
+      <label asp-for="Name" class="form-label">Name</label>
+      <input asp-for="Name" class="form-control" placeholder="Name" >
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="Profession" class="form-label">Profession</label>
+        <input asp-for="Profession" class="form-control" placeholder="Profession">
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="ImageFile" class="form-label">ImageFile</label>
+        <input asp-for="ImageFile" class="form-control" placeholder="ImageFile">
+
+    </div>
+    <div class="mb-3">
+        <label asp-for="Facebook" class="form-label">Facebook</label>
+        <input asp-for="Facebook" class="form-control" placeholder="Facebook">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Instagram" class="form-label">Instagram</label>
+        <input asp-for="Instagram" class="form-control" placeholder="Instagram">
+    </div>
+    <div class="mb-3">
+        <label asp-for="Twiter" class="form-label">Twiter</label>
+        <input asp-for="Twiter" class="form-control" placeholder="Twiter">
+    </div>
+
+
+  <button type="submit" class="btn btn-primary">Update</button>
+</form>
